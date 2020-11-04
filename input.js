@@ -7,16 +7,25 @@ const handleUserInput = function(key) {
     process.exit();
   }
   if (key === 'w') {
-    connection.write('Move: up')
+    connection.write('Move: up');
   }
   if (key === 's') {
-    connection.write('Move: down')
+    connection.write('Move: down');
   }
   if (key === 'a') {
-    connection.write('Move: left')
+    connection.write('Move: left');
   }
   if (key === 'd') {
-    connection.write('Move: right')
+    connection.write('Move: right');
+  }
+  if (key === 'm') {
+    connection.write('Say: hisses for eveyone');
+  }
+  if (key === 'n') {
+    connection.write('Say: rattle-snake shake');
+  }
+  if (key === 'b') {
+    connection.write('Say: adiosssssss!');
   }
 };
 
