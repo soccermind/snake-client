@@ -14,16 +14,14 @@ const connect = function() {
   // confirm connection is established
   conn.on('connect', () => {
     console.log('Successfully connected to game server');
-  });
-
-  conn.on('connect', () => {
     conn.write('Name: AOS');
+    // setInterval( () => conn.write('Move: up'), 50);
+    // setInterval( () => conn.write('Move: left'), 100);
   });
-
+  
   conn.on('data', (data) => {
     console.log('Server says:', data);
   });
-
   return conn;
 };
 
